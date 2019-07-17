@@ -12,19 +12,65 @@ function CalcularPrecio() {
     //Declaracion de variables
     var cantidad;
     var marca;
-    var precio;
+    var precio = 35;
     var descuento;
+    var precioFinal;
+    var IIBB;
+    var mensaje;
 
     //Entrada
     cantidad = document.getElementById("Cantidad").value;
     marca = document.getElementById("Marca").value;
 
+    //Procesamiento
     if (cantidad >= 6) {
-        
+        descuento = 50;
+
+    } else {
+        if (cantidad == 5) {
+            if (marca == "ArgentinaLuz") {
+                descuento = 40;
+
+            } else {
+                descuento = 30
+
+            }
+
+        } else {
+            if (cantidad == 4) {
+                if (marca == "ArgentinaLuz" || marca == "FelipeLamparas") {
+                    descuento = 25;
+
+                } else {
+                    descuento = 20;
+
+                }
+            } else {
+                if (cantidad == 3) {
+                    if (marca == "ArgentinaLuz") {
+                        descuento = 15;
+
+                    } else {
+                        if (marca == "FelipeLamparas") {
+                            descuento = 10;
+
+                        } else {
+                            descuento = 5;
+
+                        }
+                    }
+
+                }
+            }
+        }
 
     }
 
+    if (precioFinal >= 120) {
+        IIBB = 10
+        precioFinal = precioFinal + (precioFinal * IIBB / 100);
+        mensaje = "Usted pago " + 
 
-
+    }
 
 }
