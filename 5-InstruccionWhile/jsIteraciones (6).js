@@ -2,13 +2,16 @@ function mostrar() {
   //Declaracion de variables
   var contador = 0;
   var acumulador = 0;
+  var suma;
 
   //Entrada
-  acumulador = parseInt("Ingrese un numero");
+  acumulador = parseInt(prompt("Ingrese un numero"));
+
 
   //Procesamiento
-  while (contador < 5) {
-    acumulador = parseInt(prompt("Ingrese un numero"));
+  while (contador < 4) {
+    suma = parseInt(prompt("Ingrese un numero"));
+    acumulador = acumulador + suma;
     contador++
 
   }
