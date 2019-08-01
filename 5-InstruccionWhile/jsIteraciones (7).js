@@ -19,7 +19,6 @@ function mostrar() {
 		contador++;
 		respuesta = prompt("¿Desea repetir el proceso?");
 
-
 	}
 
 	//Salida
